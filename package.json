@@ -1,0 +1,33 @@
+{
+  "name": "clog-studio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Clog Design Studio — browser 3D pre-manufacturing visualization for custom clog designs",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5260",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --port 5261",
+    "typecheck": "tsc -b",
+    "build:model": "node tools/reference-clog/build.ts"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.3.0",
+    "dompurify": "^3.4.16",
+    "immer": "^11.1.18",
+    "lucide-react": "^1.48.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "three": "^0.186.1",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.186.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "typescript": "5.9",
+    "vite": "^6.4.3"
+  }
+}
